@@ -1,9 +1,13 @@
 package com.bridgelabz.addressbook;
 
+import java.util.*;
+
 public class AddressBookMain {
     public static void main(String[] args) {
-        System.out.println("Welcome to Address Book ");
+        // TODO Auto-generated method stub
+        ArrayList al1 = new ArrayList();
         AddressBook obj = new AddressBook();
-        obj.createContact();
+        obj.addDetails(al1);
+        obj.addMultipleContacts(al1);
     }
 }
