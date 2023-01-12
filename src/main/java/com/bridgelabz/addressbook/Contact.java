@@ -1,7 +1,6 @@
 package com.bridgelabz.addressbook;
 
-public class Contact {
-    String firstname;
+public class Contact {String firstname;
     String lastname;
     String address;
     String city;
@@ -74,17 +73,10 @@ public class Contact {
         this.zipCode = zipCode;
     }
 
-    @Override
     public String toString() {
-        return "Contact{" +
-                "firstname='" + firstname + '\'' +
-                ", lastname='" + lastname + '\'' +
-                ", address='" + address + '\'' +
-                ", city='" + city + '\'' +
-                ", state='" + state + '\'' +
-                ", email='" + email + '\'' +
-                ", phoneNo=" + phoneNo +
-                ", zipCode=" + zipCode +
-                '}';
+        return "Contact [firstname=" + firstname + ", lastname=" + lastname
+                + ", address=" + address + ", city=" + city + ", state="
+                + state + ", email=" + email + ", phoneNo=" + phoneNo
+                + ", zipCode=" + zipCode + "]";
     }
 }
