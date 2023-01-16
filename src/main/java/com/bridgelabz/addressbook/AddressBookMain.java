@@ -5,7 +5,7 @@ import java.util.*;
 public class AddressBookMain {
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
+
         // ArrayList al1 = new ArrayList();
         AddressBook obj = new AddressBook();
         obj.addDetails();
@@ -18,7 +18,7 @@ public class AddressBookMain {
 
             // obj.addElement();
 
-            System.out.println("Enter choice \n 1.Add Contact \n 2.Edit Contact");
+            System.out.println("Enter choice \n 1.Add Contact \n 2.Edit Contact \n 3.Delete contact");
             int choice;
             choice = scan.nextInt();
 
@@ -29,6 +29,10 @@ public class AddressBookMain {
                     break;
                 case 2:
                     obj.editContact();
+                    break;
+                case 3:
+                    obj.deleteContact();
+                    //		obj.print();
                     break;
 
                 default:
